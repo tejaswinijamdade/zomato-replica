@@ -1,3 +1,145 @@
 @use './reset.scss';
 
 /* Add your css here */
+body {
+    background-color:rgb(234,234,234);
+   text-decoration: none;
+    list-style-type: none;
+}
+.im{
+ background-color: white; 
+  height: 50px;margin-top: -16spx;
+}
+.im li{        
+         width: 100%;
+          margin-left: 5%;
+         display: inline;
+}
+.subhead{
+   background-image: url("images/bg.jpg");
+  overflow: auto;
+  color: white; 
+  text-align: right;
+  padding: 40px;
+  margin: 0px;
+  height:330px;  
+}
+.subhead ul li{
+    font-size: 20px;   
+   display: inline;                 
+}
+#acc{
+  border-style:solid;
+  padding: 5px;
+}
+.image
+{
+  position: absolute;
+  
+  text-align:center;
+  font-size: 1em;
+
+}
+section {
+  display:inline-block;
+  padding: 10px;
+
+}
+#search-res{
+  width: 600px;
+  height: 24px;
+  float:left;
+  margin: 5px;
+}
+.main{
+  overflow: auto;
+  clear: both;
+  width: 100%;
+}
+.sideright{
+  overflow: auto;
+  margin-left: 30px;
+  width: 40%;
+   float:left;
+}
+.widget{
+  border-style:solid;
+  border-width: thin;
+ width: 95%;
+  padding: 10px;
+  background-color: white;
+}
+.search-del{
+  border-style:solid;
+  border-width: thin;
+  border-radius: 5px;
+  padding: 10px; 
+
+}
+
+.sideleft{
+  width: 55%;
+  overflow: auto;
+  float: left;
+}
+.first img{
+  float: left;
+  margin: 0px;
+
+}
+.one{
+  float: left;
+  background-color: white;
+  margin: 2px -10px 0px 1px;
+  width: 45%;
+
+}
+.sec{
+  float: right;
+  background-color: white;
+  margin: 2px 25px 0px -16px;
+  width: 45%;
+  
+}
+
+ #category-list{  
+   text-align: left;
+  background-color: white;  
+}
+#category-list li{
+    display: inline;  
+  list-style-type: none;
+  text-decoration-style: none;
+ }
+
+ .row{
+  overflow: auto;
+  clear: both;
+  background-color: white;
+  width: 100%;
+ }
+.col-sm-3, .col-sm-2, .col-sm-4{
+  float: left;
+  margin:10px 8em 10px 5em;
+}
+.col-sm-3, .col-sm-2, .col-sm-4 li{
+  list-style-type: none;
+  text-decoration-style: none;
+}
+.footer-wrapper .fi, .si, .ti{
+  float: left;
+}
+.widget{
+  
+  padding: 0px;
+}
+.footer-wrapper{
+  margin: 0px;
+  color: white;
+  background-color: black;
+  overflow: auto;
+}
+.footer-wrapper .con .fi, .si, .ti{
+  margin:10px 8em 10px 5em;
+}
+
