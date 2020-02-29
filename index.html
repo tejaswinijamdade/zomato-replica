@@ -1,3 +1,4 @@
+
 <!-- In this file you are going to write html code -->
 <!DOCTYPE html>
 <html>
@@ -19,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header class="header-container">
+	<header class="h-container">
 		<div class="container">
   
 			<div class="im">
@@ -44,9 +45,9 @@
 									<div class="search-restaurant">
 										 <button style=" width: 80px;height: 30px;background-color:white;float: left;margin: 5px">Mumbai</button>
 
-											<input id="search-res" type="text" name="text" placeholder="Search for restaurants or cuisines...">
+											<input id="search-rest" type="text" name="text" placeholder="Search for restaurants or cuisines...">
 									
-											<button class="search-btn" style=" width: 80px;height: 30px;margin: 5px;background-color: rgb(226,55,68);">Search</button>
+											<button id="search-btn" style=" width: 80px;height: 30px;margin: 5px;background-color: rgb(226,55,68);">Search</button>
 									</div>
 							</section>
 					</div>
@@ -88,20 +89,20 @@
 				
 
 					<div class="sideright">
-						<h2>Order Food Online</h2>
-						<h4>Best resterounts delivering to your doorstep</h4>
-						<div class="widget">
-								  <div class="card-header">
-
-								    <h4 style="margin: 0px">Enter your delivery location</h4>
+							<h2>Order Food Online</h2>
+							<h4>Best resterounts delivering to your doorstep</h4>
+					<div class="widget">
+						<div class="card-header">
+						 
+						 <h4 style="margin: 0px">Enter your delivery location</h4>
 								  </div>
 								  <div class="card-body">
-								  	<div class="search-del">
+								  	<div id="search-del">
 									    <input  type="text" name="text" placeholder="Type delivery location here" style="width:350px">
 									    
-									    <button><a href="#" class="btn detect-btn">Detect</a></button><br>
+									    <button><a href="#" class="detect-btn">Detect</a></button><br>
 									 </div>     
-									    <br><button style="background-color:green;color:white;padding: 10px 140px;text-decoration: none;display: inline-block;font-size: 16px;border-radius: 10px"><a href="#" class="btn order-btn">Order Food Online!</a>
+									    <br><button style="background-color:green;color:white;padding: 10px 140px;text-decoration: none;display: inline-block;font-size: 16px;border-radius: 10px"><a href="#" class="order-btn">Order Food Online!</a>
 
 									    </button>
 
@@ -116,7 +117,7 @@
 			<section class="categories">
 				<h2 id="cat-title">Quick Searches</h2>
 				<p id="cat-subtitle">Discover restaurants by type of meal</p>
-				<ul id="category-list">
+				<ul class="category-list">
 					<li><img src="images/delivery.png">Delivery</li>
 					<li><img src="images/pkt.png">Pocket-Friendly Delivery</li>
 					<li><img src="images/breakfast.png">Breakfast</li>
@@ -130,7 +131,7 @@
 			</section>
 
 			<section class="localities">
-				<h2 class="loc-title">Popular localities in and around Sangali</h2>
+				<h2 id="loc-title">Popular localities in and around Sangali</h2>
 				<p id="loc-subtitle">Explore restaurants, bars, and cafés by locality</p>
 
 				<ul class="locality-list">												
