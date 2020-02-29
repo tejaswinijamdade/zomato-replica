@@ -1,1 +1,256 @@
 <!-- In this file you are going to write html code -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+
+<link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+	
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
+	<title>zomato</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="header-container">
+		<div class="container">
+  
+			<div class="im">
+				<ul>	
+					<img src="images/app.png"><a href="#" >Get the app</a>
+				
+					<li><a id="nav_item_1" style="margin-left: 25em"><img src="images/order.png"> Order Food</a></li>
+					<li><a id="nav_item_2"><img src="images/tab.png"> Book a Table</a></li>
+					<li><a id="nav_item_3"><img src="images/gold.jpg"> Zomato Gold</a></li>
+				</ul>	
+			</div>
+
+			<div class="subhead">
+					<ul>
+						<li><a  style="color: white">Log in</a></li>
+						<li><a  id="acc">Create an account</a></li>
+					</ul>	
+					<div class="image">
+						<img src="images/zomo.png">
+						<p style="font-size: 24px">Find the best restaurants, cafés, and bars in Mumbai</p>
+							<section class="banner">
+									<div class="search-restaurant">
+										 <button style=" width: 80px;height: 30px;background-color:white;float: left;margin: 5px">Mumbai</button>
+
+											<input id="search-res" type="text" name="text" placeholder="Search for restaurants or cuisines...">
+									
+											<button class="search-btn" style=" width: 80px;height: 30px;margin: 5px;background-color: rgb(226,55,68);">Search</button>
+									</div>
+							</section>
+					</div>
+			</div>
+
+			<div class="main">
+				<div class="sideleft">
+					<h2>Collections</h2>
+					<h4>Explore	curated lists of top restourents, cafe, pubs, and bars in mumbai, based on trends</h4>
+					<div class="first">
+						<div class="one">
+							<img src="images/trend.jpg">
+							<h3 style="margin: 0px">Treanding This Week</h3>
+							<p style="margin: 0px">Most populer restourents in town this week</p>
+						</div>
+						<div class="sec">
+							<img src="images/mum.jpg">
+							<h3 style="margin: 0px">Best Of Mumbai</h3>
+							<p style="margin: 0px">The hunt for the hihest rated restourents in your city...</p>
+						</div>
+					</div>
+
+					<div class="first">
+						<div class="one">
+							<img src="images/open.jpg">
+							<h3 style="margin: 0px">Treanding This Week</h3>
+							<p style="margin: 0px">Most populer restourents in town this week</p>
+						</div>
+						<div class="sec">
+							<img src="images/sur.jpeg">
+							<h3 style="margin: 0px">Best Of Mumbai</h3>
+							<p style="margin: 0px">The hunt for the hihest rated restourents in your city...</p>
+						</div>
+					</div>
+					<div>
+						<p style="background-color: white;color: red;float:left;text-align: center;border-style: solid;border-width:thin;width: 660px;height: 20px">All collections in mumbai</p>
+					</div>
+				</div>
+				
+
+					<div class="sideright">
+						<h2>Order Food Online</h2>
+						<h4>Best resterounts delivering to your doorstep</h4>
+						<div class="widget">
+								  <div class="card-header">
+
+								    <h4 style="margin: 0px">Enter your delivery location</h4>
+								  </div>
+								  <div class="card-body">
+								  	<div class="search-del">
+									    <input  type="text" name="text" placeholder="Type delivery location here" style="width:350px">
+									    
+									    <button><a href="#" class="btn detect-btn">Detect</a></button><br>
+									 </div>     
+									    <br><button style="background-color:green;color:white;padding: 10px 140px;text-decoration: none;display: inline-block;font-size: 16px;border-radius: 10px"><a href="#" class="btn order-btn">Order Food Online!</a>
+
+									    </button>
+
+									    <hr />
+									    <p style="color: green;font-size: 25px;text-align: center">Use code <b>ZOMATO</b> to get up to 50% OFF. T&Cs apply.</p>
+									  
+								  </div>
+						</div>
+					</div>	
+			</div>		
+
+			<section class="categories">
+				<h2 id="cat-title">Quick Searches</h2>
+				<p id="cat-subtitle">Discover restaurants by type of meal</p>
+				<ul id="category-list">
+					<li><img src="images/delivery.png">Delivery</li>
+					<li><img src="images/pkt.png">Pocket-Friendly Delivery</li>
+					<li><img src="images/breakfast.png">Breakfast</li>
+					<li><img src="images/lunch.png">Lunch</li>
+					<li><img src="images/dinner.png">Dinner </li>
+					<li><img src="images/drinks.png">Drinks & Nightlife</li>
+					<li><img src="images/cafes.png">Cafes</li>				
+					<li><img src="images/desserts.png">Desserts & Bakes</li>							
+				</ul>
+				
+			</section>
+
+			<section class="localities">
+				<h2 class="loc-title">Popular localities in and around Sangali</h2>
+				<p id="loc-subtitle">Explore restaurants, bars, and cafés by locality</p>
+
+				<ul class="locality-list">												
+					 <div class="container">
+					        <div class="row">
+					            <div class="col-sm-3">
+					                <li>Diskit Village, Ladakh</li>
+					                <li>Landour, Uttarakhand</li>
+					                <li> Malana, Himachal Pradesh</li>
+					                <li>jaysingpur</li>
+					                <li>satara</li>
+					                <li>Nako, Lahaul Spiti</li>
+					                <li>kupwad</li>
+					                <li>laxminagar</li>
+					                <li>miraj</li>
+					                
+					                
+					            </div>
+					            <div class="col-sm-2">
+					                <li>Nako, Lahaul Spiti</li>
+					                <li>kupwad</li>
+					                <li>laxminagar</li>
+					                <li>miraj</li>
+					                <li>jaysingpur</li>
+					                <li>satara</li>
+					                <li>Diskit Village, Ladakh</li>
+					                <li>Landour, Uttarakhand</li>
+					                <li> Malana, Himachal Pradesh</li>               
+					            </div>
+					            <div class="col-sm-4">
+					               <li>miraj</li>
+					                <li>jaysingpur</li>
+					                <li>satara</li>
+					                <li>Diskit Village, Ladakh</li>
+					                <li>Landour, Uttarakhand</li>
+					                <li> Malana, Himachal Pradesh</li> <li>Nako, Lahaul Spiti</li>
+					                <li>kupwad</li>
+					                <li>laxminagar</li>                              
+					            </div>            
+					        </div>	
+						</div>  					
+				</ul>
+			</section>			
+		</div>
+	</header>
+
+	<footer class="widget">
+		<div class="footer-wrapper">
+			<img src="images/zomo.png">
+			<hr />
+			<ul>			
+				<div class="container">
+					        <div class="foot">
+					            <div class="col-sm-3">
+					            	<h3>About Zomato</h3>
+					                <li>Diskit Village, Ladakh</li>
+					                <li>Landour, Uttarakhand</li>
+					                <li> Malana, Himachal Pradesh</li>
+					                <li>jaysingpur</li>
+					                <li>satara</li>
+					                <li>Nako, Lahaul Spiti</li>
+					               
+					                
+					                
+					            </div>
+					            <div class="col-sm-2">
+					            	<h3>For Foodies</h3>
+					                <li>Nako, Lahaul Spiti</li>
+					                <li>kupwad</li>
+					                <li>laxminagar</li>
+					                <li>miraj</li>
+					                <li>jaysingpur</li>
+					                
+					                           
+					            </div>
+					            <div class="col-sm-4">
+					            	<h3>For Restaurants</h3>
+					               <li>miraj</li>
+					                <li>jaysingpur</li>
+					                <li>satara</li>
+					                <li>Diskit Village, Ladakh</li>
+					                <li>Landour, Uttarakhand</li>
+					                <li> Malana, Himachal Pradesh</li>                
+					            </div> 
+
+					        </div>	
+						</div> 
+			</ul>
+
+					            <div class="con">
+
+							<h3 style="margin: 20px 0em 0px 4em">Countries</h3>
+									<div class="fi">					            	
+							            	<li>jaysingpur</li>
+							                <li>satara</li>
+							                <li>Diskit Village, Ladakh</li>
+							                <li>miraj</li>
+							                 <li>Landour, Uttarakhand</li>
+							                <li> Malana, Himachal Pradesh</li>     
+							            </div>   
+							             <div class="si">					            	
+							            	<li>jaysingpur</li>
+							                <li>satara</li>
+							                <li>Diskit Village, Ladakh</li>
+							                <li>miraj</li>
+							                 <li>Landour, Uttarakhand</li>
+							                <li> Malana, Himachal Pradesh</li>     
+							            </div> 
+							            <div class="ti">					            	
+							            	<li>jaysingpur</li>
+							                <li>satara</li>
+							                <li>Diskit Village, Ladakh</li>
+							                <li>miraj</li>
+							                 <li>Landour, Uttarakhand</li>
+							                <li> Malana, Himachal Pradesh</li>     
+							            </div>  
+						</div>     
+		</div>
+		
+	</footer>
+
+</body>
+</html>
