@@ -1,144 +1,429 @@
 @use './reset.scss';
 
 /* Add your css here */
-body {
-    background-color:rgb(234,234,234);
-   text-decoration: none;
-    list-style-type: none;
-}
-.im{
- background-color: white; 
-  height: 50px;margin-top: -16spx;
-}
-.im li{        
-         width: 100%;
-          margin-left: 5%;
-         display: inline;
-}
-.subhead{
-   background-image: url("images/bg.jpg");
-  overflow: auto;
-  color: white; 
-  text-align: right;
-  padding: 40px;
-  margin: 0px;
-  height:330px;  
-}
-.subhead ul li{
-    font-size: 20px;   
-   display: inline;                 
-}
-#acc{
-  border-style:solid;
-  padding: 5px;
-}
-.image
+html
 {
-  position: absolute;
-  
-  text-align:center;
-  font-size: 1em;
-
-}
-section {
-  display:inline-block;
-  padding: 10px;
-
-}
-#search-res{
-  width: 600px;
-  height: 24px;
-  float:left;
-  margin: 5px;
-}
-.main{
-  overflow: auto;
-  clear: both;
-  width: 100%;
-}
-.sideright{
-  overflow: auto;
-  margin-left: 30px;
-  width: 40%;
-   float:left;
-}
-.widget{
-  border-style:solid;
-  border-width: thin;
- width: 95%;
-  padding: 10px;
-  background-color: white;
-}
-#search-del{
-  border-style:solid;
-  border-width: thin;
-  border-radius: 5px;
-  padding: 10px; 
-
-}
-
-.sideleft{
-  width: 55%;
-  overflow: auto;
-  float: left;
-}
-.first img{
-  float: left;
-  margin: 0px;
-
-}
-.one{
-  float: left;
-  background-color: white;
-  margin: 2px -10px 0px 1px;
-  width: 45%;
-
-}
-.sec{
-  float: right;
-  background-color: white;
-  margin: 2px 25px 0px -16px;
-  width: 45%;
-  
-}
-
- #category-list{  
-   text-align: left;
-  background-color: white;  
-}
-#category-list li{
-    display: inline;  
-  list-style-type: none;
-  text-decoration-style: none;
- }
-
- .row{
-  overflow: auto;
-  clear: both;
-  background-color: white;
-  width: 100%;
- }
-.col-sm-3, .col-sm-2, .col-sm-4{
-  float: left;
-  margin:10px 8em 10px 5em;
-}
-.col-sm-3, .col-sm-2, .col-sm-4 li{
-  list-style-type: none;
-  text-decoration-style: none;
-}
-.footer-wrapper .fi, .si, .ti{
-  float: left;
-}
-.widget{
-  
   padding: 0px;
-}
-.footer-wrapper{
   margin: 0px;
+  overflow-x: hidden 
+}
+.h-container
+{
+  width: 100%;
+  height: auto;
+  overflow: hidden; 
+}
+ .h-container img
+ {
+    height: 2rem;
+    width: 2rem;
+}
+  .h-container p 
+{
+    padding: 5px;
+    margin-left: 20px; 
+}
+  .h-container ul
+ {
+    list-style-type: none; 
+  }
+    .h-container ul li 
+    {
+      display: inline-block;
+      padding: 7px; }
+  .h-container a {
+    color: black;
+    font: weight 100; }
+  .h-container .right-side #app {
+    padding-left: 40%;
+    text-align: center; }
+  .h-container .left-side {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center; }
+
+body {
+  padding: 0px;
+  margin: 0px; }
+
+.banner {
+  height: 65vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-image: url(../sass/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center; }
+
+.b-left {
+  float: right;
+  padding: 20px; }
+  .b-left #login {
+    color: white;
+    padding: 18px;
+    font-weight: bold; }
+
+.logoimg {
+  margin-top: 60px;
+  height: 110px;
+  width: 100px; }
+
+.logo-subtitle {
   color: white;
-  background-color: black;
-  overflow: auto;
-}
-.footer-wrapper .con .fi, .si, .ti{
-  margin:10px 8em 10px 5em;
-}
+  text-shadow: honeydew;
+  text-align: center;
+  margin-bottom: 25px; }
+
+.main {
+  background-color: whitesmoke; }
+
+.s1 {
+  margin-left: 40%;
+  background-color: white; }
+
+.searchboxx {
+  width: 71%; }
+
+.s1.s3 {
+  padding: 5px; }
+
+.search-restaurant {
+  align-items: center; }
+
+#search-rest {
+  width: 35%; }
+
+.row1 {
+  padding-top: 20px;
+  height: 40vh;
+  width: 90%;
+  background-image: url(images/ad-zomaland.jpg);
+  background-size: cover; }
+
+.advt {
+  margin-left: 10%;
+  width: 100%;
+  height: 40vh;
+  padding-bottom: 10px;
+  padding-top: 40px; }
+
+.collection {
+  margin-left: 10%;
+  padding-bottom: 10px;
+  padding-top: 17px; }
+
+.container {
+  margin: 10px;
+  width: 750px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-row: 100px 100px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-left: 10%; }
+  .container .box {
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    height: 100px;
+    width: 350px;
+    
+    font-size: 1.5rem;
+    font-family: sans-serif; }
+    .container .box .card-img {
+      height: 120px;
+      width: 120px; }
+    .container .box .card-body {
+      font-family: Arial, Helvetica, sans-serif; }
+      .container .box .card-body h5 {
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: centre; }
+      .container .box .card-body p {
+        font-size: 0.9rem;
+        text-align: centre; }
+
+#widget-online {
+  margin-left: 40px;
+  padding-top: 40px; }
+
+#sub-widget {
+  margin-left: 40px;
+  color: grey; }
+
+.alert {
+  margin-left: 10%;
+  border: solid 1px grey;
+  height: 7vh;
+  width: 100%; }
+  .alert p {
+    color: #ad0808;
+    font-size: 1rem;
+    text-align: center; }
+
+.orderr {
+  width: 375px;
+  height: 50vh;
+  background-color: white;
+  margin-left: 10%; 
+  padding: 2% }
+  .orderr h4 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px; }
+
+.search {
+  width: 70%;
+  border-radius: 8px; }
+
+.horizontal-line {
+  height: 1px;
+  width: 80%;
+  background-color: grey;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  margin-left: 10%; }
+
+.offer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: green;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.categories h2 {
+  margin-left: 10px; }
+.categories ul li {
+  display: inline-block;
+  padding: 5px; }
+
+.category-list {
+  height: 22vh;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+  border: solid black;
+  align-items: center;
+  overflow: hidden; }
+
+.category-list {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: center; }
+  .category-list li {
+    padding-left: 180px;
+    justify-items: center;
+    align-items: center;
+    text-align: center; }
+    .category-list li img {
+      height: 3.5rem;
+      width: 3.5rem;
+      margin-left: 50px;
+      padding-right: 15px; }
+  .category-list figcaption {
+    margin-left: 15px;
+    font-size: 0.9rem; }
+
+#cat-title {
+  margin-left: 10%; }
+
+#cat-subtitle {
+  margin-left: 10%; }
+
+.city-list {
+  margin-left: 10%;
+  background-color: white;
+  margin-right: 10%;
+  padding: 7px; }
+  .city-list ul {
+    list-style-type: none; }
+
+.history {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  color: grey;
+  margin-left: 14%;
+  margin-top: 10px; }
+
+.form {
+  width: 80%;
+  height: 60vh;
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .form h4 {
+    padding-top: 40px; }
+  .form p {
+    color: grey;
+    font-size: 1rem; }
+  .form .iphone {
+    width: 90%;
+    height: 60vh;
+    padding: 12px;
+    overflow: hidden;
+    margin-left: 10%; }
+  .form .number {
+    width: 80%; }
+  .form .email {
+    width: 80%; }
+  .form .playstore {
+    width: 200px;
+    height: 10vh;
+    padding: 10px; }
+  .form .email {
+    width: 50%; }
+
+.inline {
+  list-style-type: none;
+  display: inline; }
+
+.footer-wrapper {
+  background-color: #333;
+  color: white; }
+  .footer-wrapper h5 {
+    font-size: bold;
+    color: grey; }
+  .footer-wrapper ul {
+    list-style-type: none; }
+    .footer-wrapper ul a {
+      color: white; }
+
+#dropdownMenuButton {
+  float: right;
+  margin: 10px 20px 8px 8px;
+  margin-right: 10%; }
+
+.foot1 {
+  margin-left: 10%; }
+
+#zom-img {
+  width: 75px;
+  height: 20vh;
+  margin-left: 10%; }
+
+.foot20 {
+  margin-left: 10%; }
+
+.foot21 {
+  margin-left: 10%; }
+
+#loc-title {
+  margin-left: 10%; }
+
+#loc-subtitle {
+  margin-left: 10%;
+  color: grey; }
+
+.qsearch {
+  background-color: white; }
+
+.body {
+  background-color: #808080; }
+
+.bottom-row li {
+  list-style-position: none;
+  display: inline; }
+  .bottom-row li a {
+    padding: 5px; }
+
+.icons i {
+  padding-left: 20px; }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .banner {
+    display: block; }
+
+  .left-side {
+    display: block; }
+
+  .right-side {
+    display: block;
+    padding: auto;
+    margin: auto; }
+
+  .b-left {
+    display: block; }
+
+  .search-restaurant {
+    display: block; }
+
+  .form-control {
+    display: block; }
+
+  .btn-danger {
+    display: block; }
+
+  .box {
+    display: block; }
+
+  .widget {
+    display: block;
+    margin: auto; }
+
+  .categories {
+    display: block;
+    margin: auto; }
+
+  .category-list {
+    display: block; }
+
+  .localities {
+    display: block;
+    margin: auto;
+    padding: auto; }
+
+  .cities {
+    display: block; }
+
+  .loc-box {
+    display: block; }
+
+  .col-4 {
+    display: block; }
+
+  .col {
+    display: block; } }
+
+    @media (max-width: 767.98px) {
+      .history {
+        display: inline-block !important;
+      }
+      .row {
+        display: table-row;
+      }
+      .form {
+        height: 100%;
+      }
+      .form .iphone 
+      {
+        margin-left: 0;
+        width: 100%;
+    }
+    .col-6 
+    {
+      max-width: 100%;
+  }
+  .container
+   {
+    display: inline;
+  }
+  .card-body 
+  {
+    margin: -108px 0px 0px 110px;
+  }
+  .col-4 
+  {
+    max-width: 100%;
+    margin-left: -9%;
+  }
+     } 
